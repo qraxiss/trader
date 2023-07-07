@@ -36,10 +36,10 @@ app.use((req, res, next) => {
 
 // routes
 import { router as authRouter } from './routes/auth'
-import { router as sampleRouter } from './routes/sample'
+import { router as positionRouter } from './routes/position'
 
 app.use('/auth', authRouter)
-app.use('/sample', sampleRouter)
+app.use('/position', positionRouter)
 
 // Error Handling
 app.use(status500)
